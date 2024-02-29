@@ -25,5 +25,4 @@ public class Employee {
     @OneToOne
     private BankAccount bankAccountNumber;
 
-
 }
