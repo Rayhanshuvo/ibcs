@@ -1,5 +1,6 @@
 package com.ibcs.demo.controller;
 
+import com.ibcs.demo.service.BasicSalaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,12 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/basic-salary")
 
 public class BasicSalaryController {
-   // @Autowired
-  //  private BasicSalaryService basicSalaryService;
+    @Autowired
+    private BasicSalaryService basicSalaryService;
 
     @PostMapping("/grade-six")
     public void setBasicSalaryForGradeSix(@RequestParam double basicSalary) {
-      //  basicSalaryService.setBasicSalaryForGradeSix(basicSalary);
+        basicSalaryService.setBasicSalaryForGradeSix(basicSalary);
 
     }
 }

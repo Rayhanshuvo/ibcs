@@ -1,5 +1,6 @@
 package com.ibcs.demo.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/salary-disbursement")
 public class SalaryDisbursementController {
 
-/*    @Autowired
+    @Autowired
     private SalaryDisbursementService salaryDisbursementService;
 
     @PostMapping
     public void disburseSalary() {
         salaryDisbursementService.disburseSalary();
-    }*/
+    }
 
 }
